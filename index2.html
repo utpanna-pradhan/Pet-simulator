@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Simulator</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body class="day"> 
+    <div class="container">
+
+        <!-- Toggle day to night view -->
+        <div class="day-night-cycle float-end mt-4">
+            <button id="toggle-button" class="btn btn-dark" onclick="toggleDayNight()">
+                Switch to &nbsp; <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+      
+        <!-- Top Heading -->
+        <div class="keyboard text-center text-white">
+            <span class="key">V</span>
+            <span class="key">I</span>
+            <span class="key">R</span>
+            <span class="key">T</span>
+            <span class="key">U</span>
+            <span class="key">A</span>
+            <span class="key">L</span>
+            <span class="key">&nbsp; P </span>
+            <span class="key">E</span>
+            <span class="key">T</span>
+            <span class="key">&nbsp; S </span>
+            <span class="key">I</span> 
+            <span class="key">M</span> 
+            <span class="key">U</span> 
+            <span class="key">L</span>
+            <span class="key">A</span>
+            <span class="key">T</span>
+            <span class="key">O</span>
+            <span class="key">R</span>
+        </div>
+       
+        <!-- Game Main Content -->
+
+        <!-- Select preferred pet -->
+        <div class="pet-selection">
+            <label for="pet-type" class="fw-bold fs-4">Choose Your Preferred Pet: &nbsp;</label>
+            <select id="pet-type" onchange="selectPet()" class="selct_pet">
+              <option value="dog">Dog</option>
+              <option value="monkey">Monkey</option>
+            </select>
+        </div>
+        <div id="pet-mood" class="text-center text-white fs-4 mb-3">Your pet is happy!</div> 
+
+        <!-- Default pet image -->
+        <div class="d-flex main_container">
+            <!-- Left content -->
+            <div class="pet-container">
+                <img src="images/happy-dog3.png" alt="Virtual Pet" class="pet-img animate__animated animate__bounce" id="pet-img">
+            </div>
+           
+           <!-- Right content: progress bars -->
+            <div>
+                <!-- Hunger Progress -->
+                <div class="d-flex mt-5 right_width">
+                    <h3 class="text-white">Hunger: &nbsp;&nbsp;</h3>
+                    <div class="progress mt-3" style="width: 300px;">
+                        <div class="progress-bar" id="hunger-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button class="ms-3 feed_btn" onclick="feedPet()">Feed</button>
+                </div>
+            
+                <!-- Happiness Progress -->
+                <div class="d-flex mt-5 right_width">
+                    <h3 class="text-white">Happiness: &nbsp;</h3>
+                    <div class="progress mt-3 ms-0" style="width: 300px;">
+                        <div class="progress-bar" id="happiness-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button class="feed_btn ms-3" onclick="playWithPet()">Play</button>
+                </div>
+            
+                <!-- Energy Progress -->
+                <div class="d-flex mt-5 right_width">
+                    <h3 class="text-white">Energy: &nbsp;</h3>
+                    <div class="progress mt-3 ms-5" style="width: 300px;">
+                        <div class="progress-bar" id="energy-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button class="feed_btn ms-3" onclick="restPet()">Rest</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

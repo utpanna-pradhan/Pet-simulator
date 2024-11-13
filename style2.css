@@ -1,0 +1,995 @@
+
+
+body{
+    background-image: url(./images/day.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    transition: background-image 0.5s ease; /* Smooth transition for background change */
+    
+}
+/* Night background style */
+body.night {
+  background-image: url(./images/night2.jpg);
+}
+body.night button{
+  background-color: white !important;
+  color: black !important;
+}
+button{
+  border-radius: 20px !important;
+}
+
+/*heading-------------------------------------*/
+.key {
+    font-size: 5vw;
+    display: inline-block;
+    text-shadow:5px 5px  rgb(0, 0, 0);
+   
+    transition: transform 0.2s;
+  }
+  @keyframes pressDown1 {
+    30%,
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+    35% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown2 {
+    70%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown3 {
+    30%,
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+    35% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown4 {
+    40%,
+    50%,
+    100% {
+      transform: translateY(0);
+    }
+    45% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown5 {
+    20%,
+    30%,
+    100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown6 {
+    60%,
+    70%,
+    100% {
+      transform: translateY(0);
+    }
+    65% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown7 {
+    10%,
+    20%,
+    100% {
+      transform: translateY(0);
+    }
+    15% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown8 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown9 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown10 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown11 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown12 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown13 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown14 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown15 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown16 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown17 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown18 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown19 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+
+  
+  
+  
+  .key:nth-child(1) {
+    animation: pressDown1 2s infinite;
+  }
+  
+  .key:nth-child(2) {
+    animation: pressDown2 3s infinite;
+  }
+  
+  .key:nth-child(3) {
+    animation: pressDown3 4s infinite;
+  }
+  
+  .key:nth-child(4) {
+    animation: pressDown4 2.5s infinite;
+  }
+  
+  .key:nth-child(5) {
+    animation: pressDown5 2.5s infinite;
+  }
+  
+  .key:nth-child(6) {
+    animation: pressDown6 3.5s infinite;
+  }
+  
+  .key:nth-child(7) {
+    animation: pressDown7 2.2s infinite;
+  }
+  
+  .key:nth-child(8) {
+    animation: pressDown8 3.2s infinite;
+  }
+
+  .key:nth-child(9) {
+    animation: pressDown8 4.2s infinite;
+  }
+
+  .key:nth-child(10) {
+    animation: pressDown8 3.9s infinite;
+  }
+  .key:nth-child(11) {
+    animation: pressDown8 4.1s infinite;
+  }
+  .key:nth-child(12) {
+    animation: pressDown8 2.9s infinite;
+  }
+  .key:nth-child(13) {
+    animation: pressDown8 3.9s infinite;
+  }
+  .key:nth-child(14) {
+    animation: pressDown8 2.9s infinite;
+  }
+  .key:nth-child(15) {
+    animation: pressDown8 3.9s infinite;
+  }
+  .key:nth-child(16) {
+    animation: pressDown8 2.9s infinite;
+  }
+  .key:nth-child(17) {
+    animation: pressDown8 4.9s infinite;
+  }
+  .key:nth-child(18) {
+    animation: pressDown8 1.9s infinite;
+  }
+  .key:nth-child(19) {
+    animation: pressDown8 3.9s infinite;
+  }
+
+  /*--------------------select---------------*/
+  .pet-selection{
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .selct_pet{
+    width: 10%;
+    border-radius: 15px;
+    padding-left: 30px;
+  }
+  
+
+  /*------progress bar--------*/
+  
+  .progress {
+    height:18px !important;
+    width:100vw;
+    border:2px solid #ffffff;
+    margin-left: 20px;
+    /* text-align:center;
+    color:#fff;
+    font-size:20px; */
+  
+    background-color: #ffffff;
+   }
+   h3{
+    text-shadow: 2px 2px rgb(250, 2, 2);
+   }
+   .progress-bar{
+    background-image: linear-gradient(to right, red 30% , rgb(26, 241, 19));
+   }
+
+   /*demo--------------------------------------*/
+  
+   .pet-img {
+    width: 280px;
+    height: 350px;
+    transition: transform 0.3s ease;
+  }
+
+  /*button*/
+  .feed_btn{
+    width: 120px;
+    height: 37px;
+
+    position:relative;
+  display:inline-block;
+  margin:0px;
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:20px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#fc4108;
+  display:block;
+  position:relative;
+
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px); */
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #912e00;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #912900;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #912e00;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  }
+  .feed_btn:active{
+    top:10px;
+    background-color:#f85210;
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  }
+  .feed_btn:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    background-color:#2b0100;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+
+
+  /* demo---------------------------------------*/
+/* Pet container to hold the pet image */
+.pet-container {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+/* Happy animation */
+@keyframes happyBounce {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1) translateY(-10px);
+  }
+}
+
+.happy-animation {
+  animation: happyBounce 1s ease-in-out;
+}
+
+/* Jump animation */
+@keyframes jumpAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  30% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.jump-animation {
+  animation: jumpAnimation 1s ease-in-out;
+}
+
+
+/* Feeding animation */
+.feed-animation {
+  position: absolute;
+  width: 50px;
+  top: -50px;
+  left: 50px;
+  animation: feedAnimation 1s ease-in-out;
+}
+
+@keyframes feedAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  50% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+}
+body{
+  background-image: url(./images/day.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  transition: background-image 0.5s ease; /* Smooth transition for background change */
+  
+}
+/* Night background style */
+body.night {
+  background-image: url(./images/night2.jpg);
+}
+body.night button{
+  background-color: white !important;
+  color: black !important;
+}
+button{
+  border-radius: 20px !important;
+}
+
+/*heading-------------------------------------*/
+.key {
+    font-size: 5vw;
+    display: inline-block;
+    text-shadow:5px 5px  rgb(0, 0, 0);
+   
+    transition: transform 0.2s;
+  }
+  @keyframes pressDown1 {
+    30%,
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+    35% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown2 {
+    70%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown3 {
+    30%,
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+    35% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown4 {
+    40%,
+    50%,
+    100% {
+      transform: translateY(0);
+    }
+    45% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown5 {
+    20%,
+    30%,
+    100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown6 {
+    60%,
+    70%,
+    100% {
+      transform: translateY(0);
+    }
+    65% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown7 {
+    10%,
+    20%,
+    100% {
+      transform: translateY(0);
+    }
+    15% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown8 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown9 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  
+  @keyframes pressDown10 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown11 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown12 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown13 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown14 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown15 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown16 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown17 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown18 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+  @keyframes pressDown19 {
+    35%,
+    45%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+  }
+
+  
+  
+  
+  .key:nth-child(1) {
+    animation: pressDown1 2s infinite;
+  }
+  
+  .key:nth-child(2) {
+    animation: pressDown2 3s infinite;
+  }
+  
+  .key:nth-child(3) {
+    animation: pressDown3 4s infinite;
+  }
+  
+  .key:nth-child(4) {
+    animation: pressDown4 2.5s infinite;
+  }
+  
+  .key:nth-child(5) {
+    animation: pressDown5 2.5s infinite;
+  }
+  
+  .key:nth-child(6) {
+    animation: pressDown6 3.5s infinite;
+  }
+  
+  .key:nth-child(7) {
+    animation: pressDown7 2.2s infinite;
+  }
+  
+  .key:nth-child(8) {
+    animation: pressDown8 3.2s infinite;
+  }
+
+  .key:nth-child(9) {
+    animation: pressDown8 4.2s infinite;
+  }
+
+  .key:nth-child(10) {
+    animation: pressDown8 3.9s infinite;
+  }
+  .key:nth-child(11) {
+    animation: pressDown8 4.1s infinite;
+  }
+  .key:nth-child(12) {
+    animation: pressDown8 2.9s infinite;
+  }
+  .key:nth-child(13) {
+    animation: pressDown8 3.9s infinite;
+  }
+  .key:nth-child(14) {
+    animation: pressDown8 2.9s infinite;
+  }
+  .key:nth-child(15) {
+    animation: pressDown8 3.9s infinite;
+  }
+  .key:nth-child(16) {
+    animation: pressDown8 2.9s infinite;
+  }
+  .key:nth-child(17) {
+    animation: pressDown8 4.9s infinite;
+  }
+  .key:nth-child(18) {
+    animation: pressDown8 1.9s infinite;
+  }
+  .key:nth-child(19) {
+    animation: pressDown8 3.9s infinite;
+  }
+
+  /*select*/
+  .pet-selection{
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .selct_pet{
+    width: 10%;
+    border-radius: 15px;
+    padding-left: 30px;
+  }
+  /*------progress bar--------*/
+  
+  .progress {
+    height:52px;
+    width:100vw;
+    border:2px solid #ffffff;
+    margin-left: 20px;
+    /* text-align:center;
+    color:#fff;
+    font-size:20px; */
+  
+    background-color: #ffffff;
+   }
+   h3{
+    text-shadow: 2px 2px rgb(250, 2, 2);
+   }
+   .progress-bar{
+    background-image: linear-gradient(to right, red 30% , rgb(26, 241, 19));
+   }
+
+   /*demo--------------------------------------*/
+  
+   .pet-img {
+    width: 280px;
+    height: 350px;
+    transition: transform 0.3s ease;
+  }
+/*button*/
+.feed_btn{
+  width: 120px;
+  height: 37px;
+
+  position:relative;
+display:inline-block;
+margin:0px;
+color:white;
+font-family:Helvetica, sans-serif;
+font-weight:bold;
+font-size:20px;
+text-align: center;
+text-decoration:none;
+background-color:#fc4108;
+display:block;
+position:relative;
+
+
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+/* text-shadow: 0px 1px 0px #000;
+filter: dropshadow(color=#000, offx=0px, offy=1px); */
+
+-webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #912e00;
+-moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #912900;
+box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #912e00;
+
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+.feed_btn:active{
+  top:10px;
+  background-color:#f85210;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+.feed_btn:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2b0100;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+ /* demo---------------------------------------*/
+/* Pet container to hold the pet image */
+.pet-container {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+/* Happy animation */
+@keyframes happyBounce {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1) translateY(-10px);
+  }
+}
+
+.happy-animation {
+  animation: happyBounce 1s ease-in-out;
+}
+
+/* Jump animation */
+@keyframes jumpAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  30% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.jump-animation {
+  animation: jumpAnimation 1s ease-in-out;
+}
+
+
+/* Feeding animation */
+.feed-animation {
+  position: absolute;
+  width: 50px;
+  top: 270px;
+  left: 230px;
+  animation: feedAnimation 1s ease-in-out;
+}
+
+@keyframes feedAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  50% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+}
+
+
+/*play animation*/
+/* Ball animation */
+@keyframes ballAnimation {
+  0% { transform: translateX(0) translateY(0); opacity: 1; }
+  50% { transform: translateX(80px) translateY(-50px); }
+  100% { transform: translateX(150px) translateY(0); opacity: 0; }
+}
+
+.ball-animation {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  left: 0;
+  animation: ballAnimation 1.5s ease-in-out;
+  z-index: 2;
+}
+
+
+/* Fade in and out for sleep effect */
+.fade-in-out {
+  animation: fadeInOut cubic-bezier(0.6, 0.04, 0.98, 0.335) ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+
+#pet-mood {
+
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  margin-bottom: -30px !important;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------media query------------------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+
+    .key {
+      font-size: 3.5vw;
+    }
+    .selct_pet {
+      width: 20%;
+    }
+    .pet-img
+     {
+      width: 250px;
+      height: 300px;
+    }
+      .pet-selection {
+        margin-top: 20px;
+    }
+    .feed-animation {
+      top: 210px;
+      left: 180px;
+    }
+    .main_container{
+      margin-left: -130px;
+    }
+    .right_width{
+      width: 500px;
+    }
+    .progress {
+      margin-left: 30px !important;
+    }
+
+}
